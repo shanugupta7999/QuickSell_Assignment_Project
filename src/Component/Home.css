@@ -1,0 +1,179 @@
+
+.home-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+.kanban-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.display-button {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  gap: 8px; 
+}
+
+.display-button:hover {
+  transform: scale(1.05);
+}
+
+.image1, .image2 {
+  width: 20px; 
+  height: auto;
+}
+
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  width: 300px; 
+}
+
+
+.dropdown-group {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: 15px;
+}
+
+.dropdown-group:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+ 
+}
+
+.dropdown-group select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  min-width: 150px; 
+  margin-left: 50px;
+}
+
+.dropdown-group select:hover {
+  border-color: #007bff;
+}
+
+.dropdown-group select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+
+
+.second-header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+}
+
+.status-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  margin-left: 40px;
+}
+.priority-section
+{
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  flex: 1;
+  margin-left: 40px;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  flex: 1;
+  margin-left: 40px;
+}
+
+
+.user-section h3 {
+  margin: 0; 
+}
+
+.user-section span {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.kanban-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .kanban-header,
+  .second-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .kanban-column {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .dropdown {
+    flex-wrap: wrap;
+  }
+}
+.image{
+  margin-left:20px ;
+}
+.temp{
+  gap:0px
+}

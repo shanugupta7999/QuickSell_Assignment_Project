@@ -1,0 +1,81 @@
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  max-width: 30rem;
+  border: 1px solid #e5e7eb;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  color: #718096;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.header-image {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+}
+
+.title {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+}
+
+.icon-text {
+  color: #4a5568;
+  font-weight: bold;
+  font-size: 0.75rem;
+  width: 0.75rem;
+  border: 2px solid black;
+  text-align: center;
+  border-radius:3px ;
+}
+.tag {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #718096;
+  background-color: #e5e7eb;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: #1a202c;
+}
+
+.card .title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.card .checkbox {
+  margin: 0; 
+  padding: 0; 
+  border-radius: 50%;
+}
